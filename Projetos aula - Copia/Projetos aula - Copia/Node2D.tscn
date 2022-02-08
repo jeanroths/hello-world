@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fundo jogo.jpg" type="Texture" id=2]
+[ext_resource path="res://CachorroPng.gd" type="Script" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/kisspng-alien-extraterrestrial-life-clip-art-alien-5ab7f6e94617d1.7903543115220057372871.png-b6a967091f42a97afb7bc7b59e7a03d3.stex"
+
+[node name="Jogo" type="Node2D"]
+
+[node name="FundoJogo" type="Sprite" parent="."]
+position = Vector2( 525, 216 )
+scale = Vector2( 2.04313, 1.80672 )
+texture = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CachorroPng" type="Sprite" parent="Control"]
+position = Vector2( 73, 351 )
+scale = Vector2( 0.0722341, 0.0703565 )
+texture = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -17.0
+margin_top = 51.0
+margin_right = 1059.0
+margin_bottom = 65.0
+custom_colors/font_color = Color( 0.266667, 0.258824, 0.392157, 1 )
+text = "Oi, meu nome é Emanuele e estou no projeto 2."
+align = 1
+uppercase = true
+percent_visible = -0.0277778
+__meta__ = {
+"_edit_use_anchors_": false
+}
